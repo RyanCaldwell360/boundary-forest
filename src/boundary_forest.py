@@ -14,7 +14,7 @@ class BF:
           result_node = tree.BTQuery(query_node)
           result_labels.append(result_node.label)
 
-      return np.mean(result_labels)
+      return result_labels
 
   def BFTrain(self, k):
       for i in range(0, self.n_trees):
